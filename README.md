@@ -1,6 +1,6 @@
 # 2D_Graph_Visualizer
 Welcome to 2D-Graph Visualizer Window
-- Created By Prateek Gupta
+				- Created By Prateek Gupta
 
 How it Works-
 
