@@ -1,4 +1,4 @@
-# 2D_Graph_Visualizer
+# 2D Graph Visualizer
 Welcome to 2D-Graph Visualizer Window
 				- Created By Prateek Gupta
 
