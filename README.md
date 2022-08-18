@@ -6,7 +6,7 @@ How it Works-
 	* In CSV, you should mention the x-coordinates in column A and y-coordinates in column B.
 	* Do not give the indexing of coordinates, just put x and y values.
 * OR you may create a TXT file also
-	* write x y coordinates separated by <spacebar> in each line for subsequent points
+	* write x and y coordinates separated by <spacebar> in each line for subsequent points
 * Copy file path of the created (CSV or TXT) and paste it in section below.
 	* Remember to put double back slashes ( \\ ) in place of every single back slash ( \ ).
 * Press [Open file] Button.
