@@ -120,34 +120,50 @@ void MainWindow::on_pushButton_clicked()
 QLineSeries* MainWindow:: makeSeries()
 {
     QLineSeries *series = new QLineSeries();
-
-    vector<vector<string>> content;
-    vector<string> row;
-    string line, word;
-
-    fstream file (fname, ios::in);
-    if(file.is_open())
+    if(fname[fname.length()-1] == 't')// txt file
     {
-        while(getline(file, line))
-        {
-            row.clear();
-            stringstream str(line);
-            while(getline(str, word, ','))
-                row.push_back(word);
-            content.push_back(row);
-        }
-        for(int i=0;i<content.size();i++)
-        {
-            series->append(stoi(content[i][0]),stoi(content[i][1]));
-            maxX = max(maxX, stoi(content[i][0]));
-            minX = min(minX, stoi(content[i][0]));
-            maxY = max(maxY, stoi(content[i][1]));
-            minY = min(minY, stoi(content[i][1]));
-        }
-
+        ifstream fin(fname);
+            string x,y;
+            string line;
+            while (getline(fin, line)) {
+                fin >> x;
+                fin >> y;
+                series->append(stoi(x),stoi(y));
+                maxX = max(maxX, stoi(x));
+                minX = min(minX, stoi(x));
+                maxY = max(maxY, stoi(y));
+                minY = min(minY, stoi(y));
+            }
+            fin.close();
     }
     else
-        cout<<"Could not open the file\n";
+    {
+        vector<vector<string>> content;
+        vector<string> row;
+        string line, word;
+        fstream file (fname, ios::in);
+        if(file.is_open())
+        {
+            while(getline(file, line))
+            {
+                row.clear();
+                stringstream str(line);
+                while(getline(str, word, ','))
+                    row.push_back(word);
+                content.push_back(row);
+            }
+            for(int i=0;i<content.size();i++)
+            {
+                series->append(stoi(content[i][0]),stoi(content[i][1]));
+                maxX = max(maxX, stoi(content[i][0]));
+                minX = min(minX, stoi(content[i][0]));
+                maxY = max(maxY, stoi(content[i][1]));
+                minY = min(minY, stoi(content[i][1]));
+            }
+        }
+        else
+            cout<<"Could not open the file\n";
+    }
 
     return series;
 }

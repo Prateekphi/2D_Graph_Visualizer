@@ -140,7 +140,7 @@ border-radius:10px;</string>
      <enum>Qt::ScrollBarAsNeeded</enum>
     </property>
     <property name="placeholderText">
-     <string>Paste (.csv) File path (Use double backslashes in place of backslash), Example =  D:\\sampleData.csv</string>
+     <string>Paste (.csv or .txt) File path (Use double backslashes in place of backslash), Example =  D:\\sampleData.csv</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">
@@ -172,6 +172,8 @@ hr { height: 1px; border-width: 0; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Create an CSV file&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; that contains the co-ordinates whose line graph will be plotted here.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	* In CSV, you should mention the x-coordinates in column A and y-coordinates in column B.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	* Do not give the indexing of coordinates, just put x and y values.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;OR &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;you may create a &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;TXT&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; file also&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	* write x y coordinates separated by &amp;lt;spacebar&amp;gt; in each line for subsequent points&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Copy file path &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;of the created CSV and paste it in section below.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	* Remember to put double back slashes ( \\ ) in place of every single back slash ( \ ).&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;# Press [&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Open file&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;] Button.&lt;/span&gt;&lt;/p&gt;
