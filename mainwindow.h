@@ -26,7 +26,6 @@ private slots:
     void on_pushButton_clicked();
     void on_actionHome_triggered();
     void on_actionExit_triggered();
-
     void on_actionNew_triggered();
 };
 #endif // MAINWINDOW_H

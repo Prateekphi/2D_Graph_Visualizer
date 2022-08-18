@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->setStyleSheet("background-color: #add8e6;");
+
 }
 
 MainWindow::~MainWindow()
