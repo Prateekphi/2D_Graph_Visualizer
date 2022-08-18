@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->setStyleSheet("background-color: #a6a6a6;");
+    this->setStyleSheet("background-color: #add8e6;");
 }
 
 MainWindow::~MainWindow()
@@ -51,8 +51,9 @@ void MainWindow::on_pushButton_clicked()
     QLinearGradient backgroundGradient;
     backgroundGradient.setStart(QPointF(0, 0));
     backgroundGradient.setFinalStop(QPointF(0, 10));
-    backgroundGradient.setColorAt(0.0, QRgb(0xd2d0d1));
-    backgroundGradient.setColorAt(1.0, QRgb(0x4c4547));
+    // Note : It is agradient so it should have 2 colors but I used only one color
+    backgroundGradient.setColorAt(0.0, QRgb(0xadd8e6));
+    backgroundGradient.setColorAt(1.0, QRgb(0xadd8e6));
     backgroundGradient.setCoordinateMode(QGradient::ObjectBoundingMode);
     chart->setBackgroundBrush(backgroundGradient);
     // Customize plot area background
