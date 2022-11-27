@@ -21,11 +21,14 @@ public:
     QLineSeries* makeSeries();
     Ui::MainWindow *ui;
     MainWindow *nWin;
+    void further(QLineSeries *series);
 
 private slots:
     void on_pushButton_clicked();
     void on_actionHome_triggered();
     void on_actionExit_triggered();
+    void on_actionClose_All_triggered();
     void on_actionNew_triggered();
+    void on_pushButton_2_clicked();
 };
 #endif // MAINWINDOW_H

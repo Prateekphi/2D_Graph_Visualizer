@@ -28,12 +28,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::further(QLineSeries *series)
 {
-    QString textEditText = ui->plainTextEdit->toPlainText();
-    fname = textEditText.toStdString();
-    QLineSeries* series = makeSeries();
-
     QChart *chart = new QChart();
     chart->addSeries(series);
     chart->createDefaultAxes();
@@ -117,24 +113,48 @@ void MainWindow::on_pushButton_clicked()
     //chartView->setParent(ui->horizontalFrame);
 }
 
+void MainWindow::on_pushButton_2_clicked()
+{
+    QString fileName = QFileDialog::getOpenFileName(
+                this,
+                tr("Open File"),
+                "C://",
+                "All files (*.*);;Text File (*.txt)"
+                );
+    fname = fileName.toStdString();
+    QLineSeries* series = makeSeries();
+    further(series);
+    // further
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    QString textEditText = ui->plainTextEdit->toPlainText();
+    fname = textEditText.toStdString();
+    QLineSeries* series = makeSeries();
+    further(series);
+    // further
+}
+
 QLineSeries* MainWindow:: makeSeries()
 {
     QLineSeries *series = new QLineSeries();
     if(fname[fname.length()-1] == 't')// txt file
     {
         ifstream fin(fname);
-            string x,y;
-            string line;
-            while (getline(fin, line)) {
-                fin >> x;
-                fin >> y;
-                series->append(stoi(x),stoi(y));
-                maxX = max(maxX, stoi(x));
-                minX = min(minX, stoi(x));
-                maxY = max(maxY, stoi(y));
-                minY = min(minY, stoi(y));
-            }
-            fin.close();
+        string x,y;
+        string line;
+        while (getline(fin, line)) {
+            fin >> x;
+            fin >> y;
+            int ptX = stoi(x), ptY = stoi(y);
+            series->append(ptX,ptY);
+            maxX = max(maxX, ptX);
+            minX = min(minX, ptX);
+            maxY = max(maxY, ptY);
+            minY = min(minY, ptY);
+        }
+        fin.close();
     }
     else
     {
@@ -177,13 +197,16 @@ void MainWindow::on_actionHome_triggered()
 
 void MainWindow::on_actionExit_triggered()
 {
-    QApplication::quit();
+    this->close();
 }
 
+void MainWindow::on_actionClose_All_triggered()
+{
+    QApplication::quit();
+}
 
 void MainWindow::on_actionNew_triggered()
 {
     nWin = new MainWindow;
     nWin->show();
 }
-

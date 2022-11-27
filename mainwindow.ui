@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>640</width>
-    <height>540</height>
+    <height>562</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -29,75 +29,11 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>460</x>
       <y>420</y>
-      <width>110</width>
-      <height>65</height>
+      <width>101</width>
+      <height>41</height>
      </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="Button">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Window">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="Button">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Window">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled>
-       <colorrole role="Button">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Window">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </disabled>
-     </palette>
     </property>
     <property name="font">
      <font>
@@ -112,7 +48,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);
-border-radius:25px;</string>
+border-radius:20px;</string>
     </property>
     <property name="text">
      <string>Open file</string>
@@ -123,8 +59,8 @@ border-radius:25px;</string>
      <rect>
       <x>10</x>
       <y>420</y>
-      <width>500</width>
-      <height>65</height>
+      <width>431</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -169,7 +105,7 @@ hr { height: 1px; border-width: 0; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;How it Works-&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Create an CSV file&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; that contains the co-ordinates whose line graph will be plotted here.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Create a CSV file&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; that contains the co-ordinates whose line graph will be plotted here.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	* In CSV, you should mention the x-coordinates in column A and y-coordinates in column B.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	* Do not give the indexing of coordinates, just put x and y values.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;OR &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;you may create a &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;TXT&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; file also&lt;/span&gt;&lt;/p&gt;
@@ -181,6 +117,36 @@ hr { height: 1px; border-width: 0; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;# At [File] tab in ~&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; font-style:italic;&quot;&gt;MenuBar&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;there are multiple functionalities for &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;New&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;quot; , &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Home&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;quot; , &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Exit&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&amp;quot; also.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	* &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; color:#ff0000;&quot;&gt;Note&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; : &amp;quot;Home&amp;quot; Button actually &lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;opens a new window&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; and all your &lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;old work is closed&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>470</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  background-color: rgb(255, 255, 255);
+  border-radius:15px;
+}
+QPushButton:hover:!pressed
+{
+  
+}</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
     </property>
    </widget>
   </widget>
@@ -204,6 +170,7 @@ hr { height: 1px; border-width: 0; }
     <addaction name="actionNew"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
+    <addaction name="actionClose_All"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -221,6 +188,11 @@ hr { height: 1px; border-width: 0; }
   <action name="actionNew">
    <property name="text">
     <string>New</string>
+   </property>
+  </action>
+  <action name="actionClose_All">
+   <property name="text">
+    <string>Close All</string>
    </property>
   </action>
  </widget>
