@@ -11,5 +11,5 @@ How it Works-
 	* Remember to put double back slashes ( \\ ) in place of every single back slash ( \ ).
 * Press [Open file] Button.
 * Boom! - Your graph is ready.
-* At [File] tab in ~MenuBar there are multiple functionalities for "New" , "Home" , "Exit" also.
-	* Note : "Home" Button actually opens a new window and all your old work is closed.
+* At [File] tab in ~MenuBar there are multiple functionalities for "New" , "Home" , "Exit" , "Close All" also.
+	* Note : "Home" Button actually opens a new window and your current work is closed.
